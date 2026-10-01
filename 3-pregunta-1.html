@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1f5c">
+  <title>Pregunta 1 · Cine Financiero</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logos-bancoppel-afore.png">
+</head>
+<body>
+  <div class="stage">
+    <div class="bg-deco" aria-hidden="true">
+      <div class="circle-1"></div><div class="circle-2"></div><div class="circle-3"></div><div class="circle-4"></div>
+    </div>
+    <div class="film-strip"></div>
+
+    <header class="app-header">
+      <div class="app-header-inner">
+        <div class="brand-logo"><img src="assets/logos-bancoppel-afore.png" alt="BanCoppel | Afore Coppel"></div>
+        <div class="section-tag">
+          <span class="clapper-icon">
+            <svg viewBox="0 0 24 24" width="62%" height="62%" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m3.4 9.7-.6-2.4a1 1 0 0 1 .7-1.2l15-3.9a1 1 0 0 1 1.2.7l.6 2.4z"/><path d="m7.5 5 2.6 3.4M12.5 3.7l2.6 3.4"/><path d="m12 12.6.9 1.9 2 .3-1.5 1.4.4 2-1.8-1-1.8 1 .4-2-1.5-1.4 2-.3z"/></svg>
+          </span>
+          Decisiones <span class="yellow-dot">·</span> 4
+        </div>
+      </div>
+    </header>
+
+    <section class="stage-body"><div class="card">
+          <div class="stepper"><div class="dot active"></div><div class="bar"></div><div class="dot"></div><div class="bar"></div><div class="dot"></div></div>
+          <span class="eyebrow">Decisión 1 de 3</span>
+          <h1 class="t-hero" style="margin-top:14px; font-size:clamp(1.8rem, 4vh, 2.8rem);">
+          <span class="underline-anim">Quieres convertir tu sueño en meta.</span>
+          </h1>
+          <p class="t-body" style="font-size:clamp(1.05rem, 2.4vh, 1.2rem); max-width:60ch; margin-top:1.5vh; opacity:.85;">
+          Quieres convertir tu sueño en meta. ¿Cuál es el secreto para hacer un presupuesto exitoso?
+          </p>
+          <div class="options" id="opts">
+          <div class="option" data-letter="A" onclick="selectOption(this, 'A')"><span class="letter">A</span><span class="opt-text">Registrar detalladamente cada gasto que hiciste durante el mes.</span></div>
+          <div class="option" data-letter="B" onclick="selectOption(this, 'B')"><span class="letter">B</span><span class="opt-text">Recortar al máximo los gustos para ahorrar más.</span></div>
+          <div class="option" data-letter="C" onclick="selectOption(this, 'C')"><span class="letter">C</span><span class="opt-text">Diseñar un plan con mis ingresos y gastos y apegarme a él.</span></div>
+          </div>
+          <a class="cta cta-primary cta-block" id="confirmBtn" href="#" style="opacity:.4; pointer-events:none;">Elige una respuesta</a>
+          <div style="margin-top:18px; display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--color-yellow-soft); border-radius:12px;"><div class="director-avatar" style="width:48px; height:48px; border-radius:12px;"><img src="assets/director-ia.png" alt=""></div><div><span class="director-tag">Director IA</span><p class="director-msg" style="font-size:0.9rem;">Tómate tu tiempo. Piensa como si fuera tu sueño el que está en juego.</p></div></div>
+          </div></section>
+
+    <footer class="app-footer">
+      <div class="footer-block">
+        <span class="icon-circle">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5.5c0 4.3 3 7.9 7 9.5 4-1.6 7-5.2 7-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <p class="text-navy">Tu información está protegida.<br>Consulta el Aviso de privacidad.</p>
+      </div>
+      <div class="footer-block">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--color-yellow-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z"/></svg>
+        <p><span class="label text-blue">Tip del Director</span><br><span class="italic text-blue">Tú eres el protagonista.</span></p>
+      </div>
+    </footer>
+  </div>
+
+  <button class="fullscreen-btn" id="fsBtn" type="button" title="Pantalla completa">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+  </button>
+
+  <script>
+    function selectOption(el, letter) {
+      document.querySelectorAll('#opts .option').forEach(function(o){ o.classList.remove('selected'); });
+      el.classList.add('selected');
+      var btn = document.getElementById('confirmBtn');
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
+      btn.href = '4-consecuencia-1.html?choice=' + '.html?choice=' + letter;
+      btn.textContent = 'Confirmar mi decisión';
+    }
+  </script>
+
+</body>
+</html>
